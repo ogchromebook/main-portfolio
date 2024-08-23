@@ -14,9 +14,9 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section className="contact-section">
       <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="contact-form">
         <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Name" required />
         <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" required />
         <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" required></textarea>
