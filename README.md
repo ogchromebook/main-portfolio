@@ -50,9 +50,10 @@ Once the development server is running, you can view the portfolio in your brows
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-```md
-![Portfolio Screenshot](assets/images/screenshot.png)
-```
+**Portfolio Demo**
+
+![Portfolio Demo](./assets/portfolio.gif)
+
 
 ## Credits
 
