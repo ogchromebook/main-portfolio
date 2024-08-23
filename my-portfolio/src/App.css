@@ -40,14 +40,28 @@ nav a.active {
 }
 
 footer {
-  text-align: center;
-  padding: 20px 0; /* Increased padding for better spacing */
-  background: #FFFFFF; /* White for footer */
+  background-color: #FFFFFF; /* White background for footer */
   color: #1B3A24; /* Dark Green for text */
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  margin-top: 20px; /* Added margin-top for spacing above the footer */
+  text-align: center; /* Center text */
+  padding: 20px 0; /* Padding for spacing */
+}
+
+.footer-links {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center the links */
+  margin-top: 10px; /* Space above the links */
+}
+
+.footer-links a {
+  margin: 0 15px; /* Space between links */
+  color: #1B3A24; /* Dark Green for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-links a:hover {
+  color: #A0522D; /* Change color on hover (Sienna) */
 }
 
 section {
@@ -148,4 +162,41 @@ button:hover {
 
 .project-links a:hover {
   color: #A0522D; /* Change color on hover (Sienna) */
+}
+.contact-section {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Add padding for spacing */
+  margin: 20px; /* Optional: margin for spacing */
+}
+
+.contact-form {
+  display: flex; /* Use flexbox for the form */
+  flex-direction: column; /* Stack form elements vertically */
+  width: 100%; /* Full width */
+  max-width: 500px; /* Limit the width of the form */
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px; /* Space between form elements */
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em; /* Font size */
+}
+
+.contact-form button {
+  background-color: #1B3A24; /* Dark Green for button */
+  color: #FFFFFF; /* White text for button */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.contact-form button:hover {
+  background-color: #A0522D; /* Change color on hover (Sienna) */
 }
