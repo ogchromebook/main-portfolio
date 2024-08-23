@@ -1,9 +1,11 @@
+/* App.css */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #E8F5E9; /* Light Green */
-    color: #333333; /* Dark Gray */
+    background-color: #1B3A24; /* Deep Forest Green */
+    color: #E0E0E0; /* Light Gray */
 }
 
 .App {
@@ -13,15 +15,15 @@ body {
 }
 
 header {
-    background: #2E7D32; /* Dark Green */
-    color: #fff;
+    background: #FFFFFF; /* White for header */
+    color: #1B3A24; /* Dark Green for text */
     padding: 20px 0; /* Increased padding */
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
 }
 
 nav a {
-    color: #fff;
+    color: #1B3A24; /* Dark Green for links */
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.2em; /* Larger font size */
@@ -29,7 +31,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #C62828; /* Change color on hover (Red) */
+    color: #E0E0E0; /* Change color on hover */
 }
 
 nav a.active {
@@ -40,8 +42,8 @@ nav a.active {
 footer {
     text-align: center;
     padding: 20px 0; /* Increased padding for better spacing */
-    background: #2E7D32; /* Dark Green */
-    color: #fff;
+    background: #FFFFFF; /* White for footer */
+    color: #1B3A24; /* Dark Green for text */
     position: relative;
     bottom: 0;
     width: 100%;
@@ -51,13 +53,13 @@ footer {
 section {
     margin: 20px 0;
     padding: 20px;
-    background: #fff; /* White background for sections */
+    background: #2E3B2A; /* Darker background for sections */
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-    color: #2E7D32; /* Dark Green for headings */
+    color: #FFFFFF; /* White for headings */
     margin-bottom: 15px; /* Space below headings */
 }
 
@@ -71,7 +73,7 @@ h2 {
 
 .project:hover {
     transform: scale(1.02); /* Scale effect on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Shadow on hover */
 }
 
 img {
@@ -81,8 +83,8 @@ img {
 }
 
 button {
-    background-color: #2E7D32; /* Dark Green for buttons */
-    color: #fff;
+    background-color: #E0E0E0; /* Light Gray for buttons */
+    color: #1B3A24; /* Dark Green for text */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -91,7 +93,7 @@ button {
 }
 
 button:hover {
-    background-color: #C62828; /* Change color on hover (Red) */
+    background-color: #D0D0D0; /* Slightly darker gray on hover */
 }
 
 /* Media Queries for larger screens */
@@ -107,4 +109,17 @@ button:hover {
     button {
         font-size: 1.1em; /* Larger button text */
     }
+}
+
+/* App.css */
+.about-me-section {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.about-me-image {
+    width: 150px; /* Set desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners */
+    margin-right: 20px; /* Space between image and text */
 }
