@@ -200,3 +200,16 @@ button:hover {
 .contact-form button:hover {
   background-color: #A0522D; /* Change color on hover (Sienna) */
 }
+
+.download-resume {
+  display: block; /* Make it a block element */
+  margin: 15px 0; /* Space above and below */
+  color: #1B3A24; /* Dark Green for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.download-resume:hover {
+  color: #A0522D; /* Change color on hover (Sienna) */
+}

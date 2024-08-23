@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  // const [errors, setErrors] = useState({}); // Commented out since it's not used
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -10,7 +10,17 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form validation and submission logic here
+
+    // Send email using EmailJS
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+      .then((response) => {
+        console.log('Email sent successfully!', response.status, response.text);
+        // Optionally reset the form
+        setFormData({ name: '', email: '', message: '' });
+      })
+      .catch((error) => {
+        console.error('Failed to send email. Error:', error);
+      });
   };
 
   return (
